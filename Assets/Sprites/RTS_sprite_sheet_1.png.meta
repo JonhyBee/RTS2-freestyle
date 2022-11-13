@@ -1,0 +1,1280 @@
+fileFormatVersion: 2
+guid: d662e546f0777b34ba39098d0530b22a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5095203189678753334
+    second: RTS_sprite_sheet_1_0
+  - first:
+      213: 5774252558458527770
+    second: RTS_sprite_sheet_1_1
+  - first:
+      213: 8728908740626193627
+    second: RTS_sprite_sheet_1_2
+  - first:
+      213: 8953661750457046445
+    second: RTS_sprite_sheet_1_3
+  - first:
+      213: 574763257140250561
+    second: RTS_sprite_sheet_1_4
+  - first:
+      213: -6096801932951542963
+    second: RTS_sprite_sheet_1_5
+  - first:
+      213: 5754052680582489703
+    second: RTS_sprite_sheet_1_6
+  - first:
+      213: 6822335670401361563
+    second: RTS_sprite_sheet_1_7
+  - first:
+      213: 7468593943585006840
+    second: RTS_sprite_sheet_1_8
+  - first:
+      213: 7043472659575319751
+    second: RTS_sprite_sheet_1_9
+  - first:
+      213: 7632579705678992087
+    second: RTS_sprite_sheet_1_10
+  - first:
+      213: 8932152967387910129
+    second: RTS_sprite_sheet_1_11
+  - first:
+      213: 1736312957940041370
+    second: RTS_sprite_sheet_1_12
+  - first:
+      213: -5522930349144829299
+    second: RTS_sprite_sheet_1_13
+  - first:
+      213: 6181060024669127163
+    second: RTS_sprite_sheet_1_14
+  - first:
+      213: 3079231527335680094
+    second: RTS_sprite_sheet_1_15
+  - first:
+      213: -2852979549452022042
+    second: RTS_sprite_sheet_1_16
+  - first:
+      213: -7753887654977204660
+    second: RTS_sprite_sheet_1_17
+  - first:
+      213: 7924969933535738880
+    second: RTS_sprite_sheet_1_18
+  - first:
+      213: -164258537605105768
+    second: RTS_sprite_sheet_1_19
+  - first:
+      213: 5061250596822190793
+    second: RTS_sprite_sheet_1_20
+  - first:
+      213: -2461715300776724284
+    second: RTS_sprite_sheet_1_21
+  - first:
+      213: -7625671680083351558
+    second: RTS_sprite_sheet_1_22
+  - first:
+      213: -2253442121539411017
+    second: RTS_sprite_sheet_1_23
+  - first:
+      213: -5926382805724427684
+    second: RTS_sprite_sheet_1_24
+  - first:
+      213: 7337075615310193157
+    second: RTS_sprite_sheet_1_25
+  - first:
+      213: 3575269434295541729
+    second: RTS_sprite_sheet_1_26
+  - first:
+      213: -2595871300863243416
+    second: RTS_sprite_sheet_1_27
+  - first:
+      213: 8376743736486266454
+    second: RTS_sprite_sheet_1_28
+  - first:
+      213: -2799526794084531976
+    second: RTS_sprite_sheet_1_29
+  - first:
+      213: -1107941358516903860
+    second: RTS_sprite_sheet_1_30
+  - first:
+      213: 8992498913516413310
+    second: RTS_sprite_sheet_1_31
+  - first:
+      213: -8902865906044399764
+    second: RTS_sprite_sheet_1_32
+  - first:
+      213: 8992195693112046550
+    second: RTS_sprite_sheet_1_33
+  - first:
+      213: 8493500257703903679
+    second: RTS_sprite_sheet_1_34
+  - first:
+      213: 8603735820047939984
+    second: RTS_sprite_sheet_1_35
+  - first:
+      213: -5988428864339665257
+    second: RTS_sprite_sheet_1_36
+  - first:
+      213: 8260517526408546019
+    second: RTS_sprite_sheet_1_37
+  - first:
+      213: 1948253276905160735
+    second: RTS_sprite_sheet_1_38
+  - first:
+      213: 7015343441144049104
+    second: RTS_sprite_sheet_1_39
+  - first:
+      213: 1894794235854659410
+    second: RTS_sprite_sheet_1_40
+  - first:
+      213: -5270695297745277793
+    second: RTS_sprite_sheet_1_41
+  - first:
+      213: -1709221393709540312
+    second: RTS_sprite_sheet_1_42
+  - first:
+      213: -2863426304830072602
+    second: RTS_sprite_sheet_1_43
+  - first:
+      213: 4077406314984695853
+    second: RTS_sprite_sheet_1_44
+  - first:
+      213: -7290875197783274701
+    second: RTS_sprite_sheet_1_45
+  - first:
+      213: 4146501477744912389
+    second: RTS_sprite_sheet_1_46
+  - first:
+      213: -939305861787902668
+    second: RTS_sprite_sheet_1_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_0
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 592
+        width: 14
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6364d333e4cc5b640800000000000000
+      internalID: 5095203189678753334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 581
+        width: 14
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10af4ecb14422050800000000000000
+      internalID: 5774252558458527770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_2
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 613
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc93d97040532970800000000000000
+      internalID: 8728908740626193627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_3
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 613
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da59efa6cebc14c70800000000000000
+      internalID: 8953661750457046445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_4
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 613
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c78acb1328f9f700800000000000000
+      internalID: 574763257140250561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_5
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 613
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d432288b1fec36ba0800000000000000
+      internalID: -6096801932951542963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_6
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 613
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766e00d3d608adf40800000000000000
+      internalID: 5754052680582489703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_7
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 613
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96efbc552ecdae50800000000000000
+      internalID: 6822335670401361563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 554
+        width: 51
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4a4031f96c5a760800000000000000
+      internalID: 7468593943585006840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 553
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cca923e0117fb160800000000000000
+      internalID: 7043472659575319751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_10
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 554
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d21adc9dce5ce960800000000000000
+      internalID: 7632579705678992087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_11
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 552
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff8b9c9cc165fb70800000000000000
+      internalID: 8932152967387910129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_12
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 555
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a968ce49f6f981810800000000000000
+      internalID: 1736312957940041370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_13
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 580
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d829ff3fb1c9a53b0800000000000000
+      internalID: -5522930349144829299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_14
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 580
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf145c1085987c550800000000000000
+      internalID: 6181060024669127163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_15
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 580
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58d60872c0abba20800000000000000
+      internalID: 3079231527335680094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_16
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 580
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee457b273e2868d0800000000000000
+      internalID: -2852979549452022042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_17
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 580
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e0cc87248a46490800000000000000
+      internalID: -7753887654977204660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_18
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 580
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c7c009a262bfd60800000000000000
+      internalID: 7924969933535738880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_19
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 549
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897f8b6fabf68bdf0800000000000000
+      internalID: -164258537605105768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_20
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 549
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca02d62a9c2d3640800000000000000
+      internalID: 5061250596822190793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_21
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 549
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c83f070afa36ddd0800000000000000
+      internalID: -2461715300776724284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_22
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 549
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af720ee620c2c2690800000000000000
+      internalID: -7625671680083351558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_23
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 549
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3adb7645a2ab0e0800000000000000
+      internalID: -2253442121539411017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_24
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 549
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a00ddcc3241cda0800000000000000
+      internalID: -5926382805724427684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_25
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 497
+        width: 9
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502aebc066782d560800000000000000
+      internalID: 7337075615310193157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_26
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 497
+        width: 9
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef5f7f9b98ed9130800000000000000
+      internalID: 3575269434295541729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_27
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 497
+        width: 9
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b4a6d2ecc99fbd0800000000000000
+      internalID: -2595871300863243416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_28
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 496
+        width: 9
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6560eb3eb0c204470800000000000000
+      internalID: 8376743736486266454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_29
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 496
+        width: 9
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0476b96351629d0800000000000000
+      internalID: -2799526794084531976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_30
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 496
+        width: 9
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40e2ad543dcf90f0800000000000000
+      internalID: -1107941358516903860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_31
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 503
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e716b371e16cbcc70800000000000000
+      internalID: 8992498913516413310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_32
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 503
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f894bb0aaa27480800000000000000
+      internalID: -8902865906044399764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_35
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 531
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099f24fc42c966770800000000000000
+      internalID: 8603735820047939984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_36
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 531
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e965a0da3d4eca0800000000000000
+      internalID: -5988428864339665257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_37
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 503
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e648769ce043a270800000000000000
+      internalID: 8260517526408546019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_38
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 503
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f104c667806990b10800000000000000
+      internalID: 1948253276905160735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_39
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 503
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dde1cad0b18b5160800000000000000
+      internalID: 7015343441144049104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_40
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 503
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f13968159ab4a10800000000000000
+      internalID: 1894794235854659410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_41
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 503
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c22925d8abad6b0800000000000000
+      internalID: -5270695297745277793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_42
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 503
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cd171c230a748e0800000000000000
+      internalID: -1709221393709540312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_43
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 454
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8181462f01348d0800000000000000
+      internalID: -2863426304830072602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_44
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 453
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28e891c07bd59830800000000000000
+      internalID: 4077406314984695853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_45
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 483
+        width: 49
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b0c66e2ab91da90800000000000000
+      internalID: -7290875197783274701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_46
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 453
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5082e99ff155b8930800000000000000
+      internalID: 4146501477744912389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_33
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 503
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3bdb61752bacc70800000000000000
+      internalID: 8992195693112046550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_34
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 503
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb14120eb79fed570800000000000000
+      internalID: 8493500257703903679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RTS_sprite_sheet_1_47
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 189
+        width: 237
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d90bc9b4ae6f2f0800000000000000
+      internalID: -939305861787902668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
