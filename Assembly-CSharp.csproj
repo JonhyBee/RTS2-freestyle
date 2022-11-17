@@ -53,7 +53,7 @@
     <UnityVersion>2020.3.41f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Interfaces\IMoveVelocity.cs" />
@@ -72,6 +72,7 @@
     <Compile Include="Assets\CodeMonkey\MonoBehaviours\PositionRendererSorter.cs" />
     <Compile Include="Assets\Controllers\MovePositionDirect.cs" />
     <Compile Include="Assets\Controllers\MoveTransformVelocity.cs" />
+    <Compile Include="Assets\Controllers\Pathnode.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\FunctionUpdater.cs" />
     <Compile Include="Assets\Models\Testing.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\FunctionTimer.cs" />

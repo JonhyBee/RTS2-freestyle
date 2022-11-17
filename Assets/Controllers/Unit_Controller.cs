@@ -9,6 +9,7 @@ public class Unit_Controller : MonoBehaviour
 
   private void Awake()
   {
+    GetComponent<MovePositionDirect>().SetMovePosition(new Vector3(10f,10f));
     selectedGameObject = transform.Find("Selected").gameObject;
     SetSelectedVisible(false);
   }
@@ -23,7 +24,7 @@ public class Unit_Controller : MonoBehaviour
     {
       if (GetComponent<Unit_Controller>().is_selected)
       {
-        GetComponent<MovePositionDirect>().SetMovePosition(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        GetComponent<MovePositionDirect>().SetMovePosition(Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(-0.5f,0.8f));
       }
     }
   }

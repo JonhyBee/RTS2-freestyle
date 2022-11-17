@@ -11,7 +11,7 @@ public class Testing : MonoBehaviour
   private void Start()
   {
     //Creation a new grid visible only in debug of size (x,y,tilesize(float),Position relative to (0,0) or lower left corner as a Vector3)     
-    grid = new Grid(10, 10, 2f, new Vector3(0, 0));
+    grid = new Grid(40, 40, 0.5f, new Vector3(0, 0));
   }
 
   private void Update()

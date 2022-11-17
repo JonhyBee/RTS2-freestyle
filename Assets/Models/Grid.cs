@@ -2,9 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using CodeMonkey.Utils;
+using System;
 
 public class Grid
 {
+  public const int HEAT_MAP_MAX_VALUE = 100;
+  public const int HEAT_MAP_MIN_VALUE = 0;
+
+  public event EventHandler<OnGridValueChangedEventArgs> OnGridValueChanged;
+  public class OnGridValueChangedEventArgs : EventArgs
+  {
+    public int x;
+    public int y;
+  }
+  
   private int width;
   private int height;
   private float cellSize;
@@ -34,7 +45,18 @@ public class Grid
     Debug.DrawLine(GetWorldPosition(0, height), GetWorldPosition(width, height), Color.white, 100f);
     Debug.DrawLine(GetWorldPosition(width, 0), GetWorldPosition(width, height), Color.white, 100f);
 
+    OnGridValueChanged += (object sender, OnGridValueChangedEventArgs eventArgs) =>
+    {
+      debugTextArray[eventArgs.x, eventArgs.y].text = gridArray[eventArgs.x, eventArgs.y].ToString();
+    };
+
   }
+
+  public int GetWidth() { return width; }
+
+  public int GetHeight() { return height; }
+
+  public float GetCellSize() { return cellSize; }
 
   private Vector3 GetWorldPosition(int x, int y){
     return new Vector3(x, y) * cellSize + originPosition;
@@ -51,7 +73,8 @@ public class Grid
     if (x >= 0 && y >= 0 && x < width && y < height)
     {
       gridArray[x, y] = value;
-      debugTextArray[x, y].text = gridArray[x, y].ToString();
+      
+      if (OnGridValueChanged != null) OnGridValueChanged(this, new OnGridValueChangedEventArgs {x=x, y=y});
     }
     
   }
