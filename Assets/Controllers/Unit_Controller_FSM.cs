@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Assets;
 using Assets.Interfaces;
 using Assets.State;
 using UnityEngine;
@@ -13,7 +14,7 @@ public class Unit_Controller_FSM : MonoBehaviour, ISelectableObject
     public BaseUnitState CurrentState;
     public readonly MovingUnitState MovingUnitState = new MovingUnitState();
     public readonly IdleUnitState IdleUnitState = new IdleUnitState();
-    [Range(0,50)]
+    [Range(0, 50)]
     public int MoveSpeed = 10;
 
     private Rigidbody2D rigidbody;
@@ -41,7 +42,7 @@ public class Unit_Controller_FSM : MonoBehaviour, ISelectableObject
     public void TransitionToState(BaseUnitState state, Func<Vector2> target)
     {
         CurrentState = state;
-        CurrentState.EnterState(this, target );
+        CurrentState.EnterState(this, target);
     }
 
     public void Select()
@@ -54,5 +55,10 @@ public class Unit_Controller_FSM : MonoBehaviour, ISelectableObject
     {
         is_selected = false;
         selectedGameObject.SetActive(is_selected);
+    }
+
+    public void SelectedAction(ControlEnum controlEnum, Func<Vector2> target)
+    {   
+        CurrentState.SelectedAction(this, controlEnum, target);
     }
 }

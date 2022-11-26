@@ -15,5 +15,6 @@ namespace Assets.State
 
         public abstract void OnCollisionEnter(Unit_Controller_FSM unit, Collision collision);
 
+        public abstract void SelectedAction(Unit_Controller_FSM unit, ControlEnum controlEnum, Func<Vector2> target);
     }
 }

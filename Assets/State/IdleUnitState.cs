@@ -16,24 +16,23 @@ namespace Assets.State
 
         public override void Update(Unit_Controller_FSM unit)
         {
-            if (Input.GetMouseButtonUp(1))
-            {
-                if (unit.is_selected)
-                {
-                    var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                    var mousePos2D = new Vector2(mousePosition.x, mousePosition.y);
-
-                    var hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-                    if (hit.rigidbody != null)
-                        unit.TransitionToState(unit.MovingUnitState, () => hit.rigidbody.position);
-                    else
-                        unit.TransitionToState(unit.MovingUnitState, () => mousePosition);
-                }
-            }
         }
 
         public override void OnCollisionEnter(Unit_Controller_FSM unit, Collision collision)
         {
+        }
+
+        public override void SelectedAction(Unit_Controller_FSM unit, ControlEnum controlEnum, Func<Vector2> target)
+        {
+            switch (controlEnum)
+            {
+                case ControlEnum.MouseRightDown:
+                    unit.TransitionToState(unit.MovingUnitState, target);
+                    break;
+                default:
+                    Debug.LogFormat("IdleUnitState have no action registered for ${a}", controlEnum.ToString());
+                    break;
+            }
         }
     }
 }

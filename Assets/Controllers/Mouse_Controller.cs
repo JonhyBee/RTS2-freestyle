@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets;
 using Assets.Interfaces;
 using UnityEngine;
 
@@ -7,8 +8,7 @@ public class Mouse_Controller : MonoBehaviour
 {
 
     [SerializeField] private Transform selectionAreaTransform;
-    Vector3 currFramePosition;
-    Vector3 lastFramePosition;
+    Vector2 lastFramePosition;
     public Vector3 newTargetPosition;
     private Vector3 startPosition;
     public List<ISelectableObject> selectedUnitList;
@@ -22,10 +22,8 @@ public class Mouse_Controller : MonoBehaviour
     }
     private void Update()
     {
-
-        currFramePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        currFramePosition.z = 0;
-
+        Vector2 currFramePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        
         if (Input.GetMouseButton(0))//if the left mouse button is held down, we are defining a box, lets draw it! using the selectionAreaTransform serialized field (gameObject)
         {
             Vector3 currentMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -83,16 +81,31 @@ public class Mouse_Controller : MonoBehaviour
         //Handle screen dragging
         if (Input.GetMouseButton(1) || Input.GetMouseButton(2))
         { //right or middle mouse button to move the camera
-            Vector3 diff = lastFramePosition - currFramePosition;
+            var diff = lastFramePosition - currFramePosition;
             Camera.main.transform.Translate(diff);
         }
 
+        if (Input.GetMouseButtonUp(1))
+        {
+            var hit = Physics2D.Raycast(currFramePosition, Vector2.zero);
+            if (hit.rigidbody != null)
+                selectedUnitList.ForEach(x => x.SelectedAction(ControlEnum.MouseRightDown, () => hit.rigidbody.position));
+            else
+                selectedUnitList.ForEach(x => x.SelectedAction(ControlEnum.MouseRightDown, () => currFramePosition));
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            selectedUnitList.ForEach(x => x.SelectedAction(ControlEnum.KeyDown_S, () => currFramePosition));
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            selectedUnitList.ForEach(x => x.SelectedAction(ControlEnum.KeyDown_B, () => currFramePosition));
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            selectedUnitList.ForEach(x => x.SelectedAction(ControlEnum.KeyDown_C, () => currFramePosition));
+        }
+
         lastFramePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        lastFramePosition.z = 0;
-
-
     }
-
-
-
 }

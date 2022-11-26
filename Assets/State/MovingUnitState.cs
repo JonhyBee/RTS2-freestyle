@@ -18,22 +18,6 @@ namespace Assets.State
 
         public override void Update(Unit_Controller_FSM unit)
         {
-            if (unit.is_selected && Input.GetKeyDown(KeyCode.S))
-            {
-                unit.TransitionToState(unit.IdleUnitState, () => unit.Rigidbody.position);
-                return;
-            }
-            if (unit.is_selected && Input.GetMouseButtonUp(1))
-            {
-                var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                var mousePos2D = new Vector2(mousePosition.x, mousePosition.y);
-
-                var hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-                if (hit.rigidbody != null)
-                    unit.TransitionToState(unit.MovingUnitState, () => hit.rigidbody.position);
-                else
-                    unit.TransitionToState(unit.MovingUnitState, () => mousePosition);
-            }
             var newPosition = Vector2.MoveTowards(unit.Rigidbody.position, destination(), unit.MoveSpeed * Time.deltaTime);
             if (newPosition == unit.Rigidbody.position)
                 unit.TransitionToState(unit.IdleUnitState, () => unit.Rigidbody.position);
@@ -44,6 +28,22 @@ namespace Assets.State
         public override void OnCollisionEnter(Unit_Controller_FSM unit, Collision collision)
         {
             unit.TransitionToState(unit.IdleUnitState, () => unit.Rigidbody.position);
+        }
+
+        public override void SelectedAction(Unit_Controller_FSM unit, ControlEnum controlEnum, Func<Vector2> target)
+        {
+            switch (controlEnum)
+            {
+                case ControlEnum.MouseRightDown:
+                    unit.TransitionToState(unit.MovingUnitState, target);
+                    break;
+                case ControlEnum.KeyDown_S:
+                    unit.TransitionToState(unit.IdleUnitState, target);
+                    break;
+                default:
+                    Debug.LogFormat("MovingUnitState have no action registered for ${a}", controlEnum.ToString());
+                    break;
+            }
         }
     }
 }
