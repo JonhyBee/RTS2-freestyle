@@ -46,6 +46,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -128,6 +129,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -210,6 +212,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -292,6 +295,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -374,6 +378,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -422,9 +427,8 @@ GameObject:
   - component: {fileID: 3818713050515092539}
   - component: {fileID: 3818713050515092540}
   - component: {fileID: 3818713050515092537}
-  - component: {fileID: 3818713050515092518}
-  - component: {fileID: 3818713050515092519}
-  - component: {fileID: 3818713050515092517}
+  - component: {fileID: -2779883075658573257}
+  - component: {fileID: -2749091813792458747}
   m_Layer: 0
   m_Name: Unit
   m_TagString: Untagged
@@ -500,8 +504,8 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.1779095, y: -0.353478}
   serializedVersion: 2
-  m_Radius: 0.18865818
---- !u!114 &3818713050515092518
+  m_Radius: 0.1886582
+--- !u!114 &-2779883075658573257
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -510,32 +514,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 3818713050515092541}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956beba8f1fcd7c4baf92d24cb3b61a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 100
---- !u!114 &3818713050515092519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3818713050515092541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27c3fada10ef1134b948b018342dda89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3818713050515092517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3818713050515092541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8774b38d63c905f44912c3da87619324, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b56d36e06ca01b4c8455006ae3802f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   is_selected: 0
+  MoveSpeed: 10
+--- !u!50 &-2749091813792458747
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3818713050515092541}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.11181529
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
