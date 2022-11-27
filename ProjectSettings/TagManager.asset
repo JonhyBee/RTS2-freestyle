@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: SelectableSprite
+    uniqueID: 2984025061
+    locked: 0
+  - name: UnitSprite
+    uniqueID: 44534475
+    locked: 0

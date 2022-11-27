@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets
 {
-    public enum ControlEnum
+    public enum ControlEnum 
     {
         MouseRightDown,
         KeyDown_S,
