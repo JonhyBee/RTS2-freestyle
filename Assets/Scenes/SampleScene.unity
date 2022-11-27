@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86767154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.94, y: 8.3, z: 2}
+  m_LocalPosition: {x: 14.8, y: 4.8, z: 2}
   m_LocalScale: {x: 4, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d4e98cf4aa6ebc4188a4239dd0da697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionAreaTransform: {fileID: 1040998321}
+  selectionAreaTransform: {fileID: 0}
   newTargetPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -354,17 +354,17 @@ PrefabInstance:
     - target: {fileID: 3818713050515092538, guid: 2cf60f37ccd6a434a9bac2212f30cb7a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.422538
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3818713050515092538, guid: 2cf60f37ccd6a434a9bac2212f30cb7a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.3945355
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3818713050515092538, guid: 2cf60f37ccd6a434a9bac2212f30cb7a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.350578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3818713050515092538, guid: 2cf60f37ccd6a434a9bac2212f30cb7a,
         type: 3}
@@ -438,12 +438,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1040998321 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 941118406820360406, guid: 391a4ae0a56cde34581fcbab7ad4e951,
-    type: 3}
-  m_PrefabInstance: {fileID: 941118406450982759}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1143203500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -675,6 +669,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heatMapVisual: {fileID: 1367290201}
+--- !u!1 &1595873505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1595873506}
+  m_Layer: 0
+  m_Name: Selected
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1595873506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595873505}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.6205702, y: 0.42965412, z: -5.471524}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!850595691 &1764780717
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -811,9 +835,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008194536}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.43, y: 8.17, z: 5}
-  m_LocalScale: {x: 0.31283998, y: 0.31212002, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -838,17 +862,17 @@ PrefabInstance:
     - target: {fileID: 7825892753316548594, guid: 391a4ae0a56cde34581fcbab7ad4e951,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.768958
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7825892753316548594, guid: 391a4ae0a56cde34581fcbab7ad4e951,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.114023
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7825892753316548594, guid: 391a4ae0a56cde34581fcbab7ad4e951,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.567919
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7825892753316548594, guid: 391a4ae0a56cde34581fcbab7ad4e951,
         type: 3}

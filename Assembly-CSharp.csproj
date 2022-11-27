@@ -89,6 +89,7 @@
     <Compile Include="Assets\Controllers\Pathfinding.cs" />
     <Compile Include="Assets\State\IdleUnitState.cs" />
     <Compile Include="Assets\CodeMonkey\MonoBehaviours\ComponentActions.cs" />
+    <Compile Include="Assets\ControlEnum.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\UI_Sprite.cs" />
     <Compile Include="Assets\GridMap\Scripts\Testing.cs" />
     <Compile Include="Assets\Controllers\MoveVelocity.cs" />
@@ -97,7 +98,6 @@
     <Compile Include="Assets\GridMap\Scripts\Grid.cs" />
     <Compile Include="Assets\CodeMonkey\CMDebug.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\FunctionPeriodic.cs" />
-    <Compile Include="Assets\ControlEnum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CodeMonkey\README.txt" />

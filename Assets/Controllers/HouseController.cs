@@ -65,7 +65,7 @@ public class HouseController : MonoBehaviour, ISelectableObject
                 StartCoroutine(BuildPeon());
                 break;
             default:
-                Debug.LogFormat("HouseController have no action registered for ${a}", controlEnum.ToString());
+                Debug.LogFormat("HouseController have no action registered for {0}", controlEnum.ToString());
                 break;
         }
     }

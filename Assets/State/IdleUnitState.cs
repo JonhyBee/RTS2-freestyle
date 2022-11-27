@@ -30,7 +30,7 @@ namespace Assets.State
                     unit.TransitionToState(unit.MovingUnitState, target);
                     break;
                 default:
-                    Debug.LogFormat("IdleUnitState have no action registered for ${a}", controlEnum.ToString());
+                    Debug.LogFormat("IdleUnitState have no action registered for {0}", controlEnum.ToString());
                     break;
             }
         }

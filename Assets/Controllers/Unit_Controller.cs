@@ -45,7 +45,7 @@ public class Unit_Controller : MonoBehaviour, ISelectableObject
                 GetComponent<MovePositionDirect>().SetMovePosition(target());
                 break;
             default:
-                Debug.LogFormat("Unit_Controller have no action registered for ${a}", controlEnum.ToString());
+                Debug.LogFormat("Unit_Controller have no action registered for {0}", controlEnum.ToString());
                 break;
         }
     }
