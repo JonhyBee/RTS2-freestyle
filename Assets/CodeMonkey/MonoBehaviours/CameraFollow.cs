@@ -9,12 +9,11 @@
                unitycodemonkey.com
     --------------------------------------------------
  */
- 
+
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace CodeMonkey.MonoBehaviours {
+namespace Assets.CodeMonkey.MonoBehaviours {
 
     /*
      * Script to handle Camera Movement and Zoom

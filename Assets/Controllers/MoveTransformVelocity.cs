@@ -1,21 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Assets.Interfaces;
 using UnityEngine;
 
-public class MoveTransformVelocity : MonoBehaviour, IMoveVelocity
+namespace Assets.Controllers
 {
+    public class MoveTransformVelocity : MonoBehaviour, IMoveVelocity
+    {
 
-  [SerializeField] private float moveSpeed;
-  private Vector3 velocityVector;
+        [SerializeField] private float moveSpeed;
+        private Vector3 velocityVector;
 
-  public void SetVelocity(Vector3 velocityVector)
-  {
-    this.velocityVector = velocityVector;
-  }
+        public void SetVelocity(Vector3 velocityVector)
+        {
+            this.velocityVector = velocityVector;
+        }
 
-  private void Update()
-  {
-    transform.position += velocityVector * moveSpeed * Time.deltaTime;
-  }
+        private void Update()
+        {
+            transform.position += velocityVector * moveSpeed * Time.deltaTime;
+        }
 
+    }
 }

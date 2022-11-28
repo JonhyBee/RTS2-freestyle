@@ -8,8 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{19AC4429-8265-BACA-EF0D-6E77296745F1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -61,34 +60,37 @@
     <Compile Include="Assets\Interfaces\IMoveVelocity.cs" />
     <Compile Include="Assets\Controllers\Unit_Controller.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\Button_UI.cs" />
+    <Compile Include="Assets\Units\MonoBehaviours\BasicUnitController.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\World_Mesh.cs" />
+    <Compile Include="Assets\State\MovingUnitState.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\UI_TextComplex.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\Button_Sprite.cs" />
     <Compile Include="Assets\CodeMonkey\MonoBehaviours\CameraFollowSetup.cs" />
     <Compile Include="Assets\CodeMonkey\MonoBehaviours\CameraFollow.cs" />
     <Compile Include="Assets\CodeMonkey\Assets.cs" />
+    <Compile Include="Assets\Interfaces\ISelectableObject.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\World_Sprite.cs" />
     <Compile Include="Assets\Controllers\Mouse_Controller.cs" />
+    <Compile Include="Assets\Units\ScriptableObjects\UnitScriptableObject.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\World_Bar.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\UtilsClass.cs" />
+    <Compile Include="Assets\State\BaseUnitState.cs" />
     <Compile Include="Assets\CodeMonkey\MonoBehaviours\PositionRendererSorter.cs" />
     <Compile Include="Assets\Controllers\MovePositionDirect.cs" />
     <Compile Include="Assets\Controllers\MoveTransformVelocity.cs" />
     <Compile Include="Assets\GridMap\Scripts\MeshUtils.cs" />
     <Compile Include="Assets\Controllers\Pathnode.cs" />
+    <Compile Include="Assets\TerrainTrigger.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\FunctionUpdater.cs" />
-    <Compile Include="Assets\Controllers\HouseController.cs" />
+    <Compile Include="Assets\Buildings\MonoBehaviours\HouseController.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\FunctionTimer.cs" />
     <Compile Include="Assets\Controllers\Unit_Controller_FSM.cs" />
     <Compile Include="Assets\Controllers\PlayerMovementKeys.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\UI_Bar.cs" />
     <Compile Include="Assets\Controllers\MovePositionPathfinding.cs" />
-    <Compile Include="Assets\Interfaces\ISelectableObject.cs" />
-    <Compile Include="Assets\State\BaseUnitState.cs" />
-    <Compile Include="Assets\State\IdleUnitState.cs" />
-    <Compile Include="Assets\State\MovingUnitState.cs" />
     <Compile Include="Assets\_\GameHandler_Setup.cs" />
     <Compile Include="Assets\Controllers\Pathfinding.cs" />
+    <Compile Include="Assets\State\IdleUnitState.cs" />
     <Compile Include="Assets\CodeMonkey\MonoBehaviours\ComponentActions.cs" />
     <Compile Include="Assets\ControlEnum.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\UI_Sprite.cs" />
@@ -755,8 +757,14 @@
     <Reference Include="Unity.2D.Common.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="NavMeshComponentsEditor">
+      <HintPath>Library\ScriptAssemblies\NavMeshComponentsEditor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="NavMeshComponents">
+      <HintPath>Library\ScriptAssemblies\NavMeshComponents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>

@@ -11,10 +11,10 @@
  */
 
 using System;
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
-namespace CodeMonkey.Utils {
+namespace Assets.CodeMonkey.Utils {
 
     /*
      * Calls function on every Update until it returns true
