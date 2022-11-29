@@ -1,10 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class MovePositionPathfinding : MonoBehaviour
+namespace Assets.Controllers
 {
-  public void SetMovePosition(Vector3 movePosition)
-  {
-  }
+    public class MovePositionPathfinding : MonoBehaviour
+    {
+        public void SetMovePosition(Vector3 movePosition)
+        {
+        }
+    }
 }

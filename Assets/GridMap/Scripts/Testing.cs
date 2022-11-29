@@ -1,23 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Assets.CodeMonkey.Utils;
 using UnityEngine;
-using CodeMonkey.Utils;
 
-public class Testing : MonoBehaviour {
+namespace Assets.GridMap.Scripts
+{
+    public class Testing : MonoBehaviour {
 
-    [SerializeField] private HeatMapVisual heatMapVisual;
-    private Grid grid;
+        [SerializeField] private HeatMapVisual heatMapVisual;
+        private Grid grid;
 
-    private void Start() {
-        grid = new Grid(100, 100, 0.2f, Vector3.zero);
+        private void Start() {
+            grid = new Grid(100, 100, 0.2f, Vector3.zero);
 
-        heatMapVisual.SetGrid(grid);
-    }
+            heatMapVisual.SetGrid(grid);
+        }
 
-    private void Update() {
-        if (Input.GetMouseButtonDown(0)) {
-            Vector3 position = UtilsClass.GetMouseWorldPosition();
-            grid.AddValue(position, 100, 1, 15);
+        private void Update() {
+            if (Input.GetMouseButtonDown(0)) {
+                Vector3 position = UtilsClass.GetMouseWorldPosition();
+                grid.AddValue(position, 100, 1, 15);
+            }
         }
     }
 }

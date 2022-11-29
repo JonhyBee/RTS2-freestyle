@@ -12,7 +12,7 @@
 
 using UnityEngine;
 
-namespace CodeMonkey.Utils {
+namespace Assets.CodeMonkey.Utils {
 
     /*
      * Mesh in the World

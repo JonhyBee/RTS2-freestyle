@@ -9,10 +9,10 @@
                unitycodemonkey.com
     --------------------------------------------------
  */
- 
+
 using UnityEngine;
 
-namespace CodeMonkey.MonoBehaviours {
+namespace Assets.CodeMonkey.MonoBehaviours {
 
     /*
      * Automatically sort a Renderer (SpriteRenderer, MeshRenderer) based on his Y position

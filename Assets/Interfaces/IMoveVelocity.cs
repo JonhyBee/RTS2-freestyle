@@ -1,10 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public interface IMoveVelocity{
+namespace Assets.Interfaces
+{
+    public interface IMoveVelocity{
 
-  void SetVelocity(Vector3 velocityVector3);
+        void SetVelocity(Vector3 velocityVector3);
 
 
+    }
 }

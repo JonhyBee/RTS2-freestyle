@@ -1,25 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Assets.Interfaces;
 using UnityEngine;
 
-public class MovePositionDirect : MonoBehaviour
+namespace Assets.Controllers
 {
+    public class MovePositionDirect : MonoBehaviour
+    {
 
-  private Vector3 movePosition;
+        private Vector3 movePosition;
 
-  public void Awake()
-  {
-    movePosition = transform.position;
-  }
+        public void Awake()
+        {
+            movePosition = transform.position;
+        }
 
-  public void SetMovePosition(Vector3 movePosition)
-  {
-    this.movePosition = movePosition;
-  }
+        public void SetMovePosition(Vector3 movePosition)
+        {
+            this.movePosition = movePosition;
+        }
 
-  private void Update()
-  {
-    Vector3 moveDir = (movePosition - transform.position).normalized;
-    GetComponent<IMoveVelocity>().SetVelocity(moveDir);
-  }
+        private void Update()
+        {
+            Vector3 moveDir = (movePosition - transform.position).normalized;
+            GetComponent<IMoveVelocity>().SetVelocity(moveDir);
+        }
+    }
 }

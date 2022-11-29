@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638040745567627246
-    m_Hash: 1558729981
+      ticks: 638051816808927225
+    m_Hash: 1498845869
   m_LockFileStatus:
     m_FilePath: C:/Users/vince.huot/Documents/GitHub/RTS2-freestyle/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638040745567637233
-    m_Hash: 458715132
+      ticks: 638051817182307415
+    m_Hash: 3900778141
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -3230,6 +3230,54 @@ m_PackageAssets:
       - name: com.unity.modules.subsystems
         version: 1.0.0
       keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
+    - packageId: com.h8man.2d.navmeshplus@https://github.com/h8man/NavMeshPlus.git#master
+      testable: 0
+      isDirectDependency: 1
+      version: 0.2.12
+      source: 5
+      resolvedPath: C:\Users\vince.huot\Documents\GitHub\RTS2-freestyle\Library\PackageCache\com.h8man.2d.navmeshplus@4a5aec0a09
+      assetPath: Packages/com.h8man.2d.navmeshplus
+      name: com.h8man.2d.navmeshplus
+      displayName: NavMeshPlus
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: NavMesh building components provide you with ability to create
+        navigation meshes that are generated automatically from your Scene geometry,
+        which allows characters to move intelligently around the game world.
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - 2d
       registry:
         id: main
         name: 
