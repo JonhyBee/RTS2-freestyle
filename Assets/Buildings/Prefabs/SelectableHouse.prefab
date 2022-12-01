@@ -109,7 +109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941118406223821512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7825892753316548594}
@@ -154,7 +154,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 44534475
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -939305861787902668, guid: d662e546f0777b34ba39098d0530b22a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 7825892753316548594}
   - component: {fileID: 1807715731}
   - component: {fileID: 1807715729}
+  - component: {fileID: 1867537678}
   m_Layer: 0
   m_Name: SelectableHouse
   m_TagString: Untagged
@@ -220,7 +221,7 @@ Transform:
   m_GameObject: {fileID: 4353742129696472673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 941118406223821525}
   - {fileID: 86767156}
@@ -240,7 +241,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02182484, y: -0.3317335}
+  m_Offset: {x: -0.015163839, y: -0.29046202}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -251,7 +252,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.715261, y: 1.556533}
+  m_Size: {x: 1.7766606, y: 1.7620175}
   m_EdgeRadius: 0
 --- !u!114 &1807715729
 MonoBehaviour:
@@ -265,6 +266,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9356513314afc042a6643fc99378ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabPeon: {fileID: 3873923943402290069, guid: 373f7e321d01b2b429020c4b27a65dfa,
+  PrefabUnit: {fileID: 8131826299199587939, guid: 2ce3461bf77ef4e4c864e31e215bcfa8,
     type: 3}
-  PeonBuildTime: 2
+  PeonBuildTime: 1
+--- !u!208 &1867537678
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4353742129696472673}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.9, y: 0.9, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: -0.3, z: 0}
+  m_TimeToStationary: 0.5

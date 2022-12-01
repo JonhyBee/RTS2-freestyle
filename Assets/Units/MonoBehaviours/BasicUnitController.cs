@@ -9,7 +9,8 @@ namespace Assets.Units.MonoBehaviours
     public class BasicUnitController : MonoBehaviour, ISelectableObject
     {
         private GameObject selectedGameObject;
-        public NavMeshAgent NavMeshAgent { get; private set; }
+        public bool isSelected;
+    public NavMeshAgent NavMeshAgent { get; private set; }
 
         private void OnEnable()
         {
@@ -17,7 +18,8 @@ namespace Assets.Units.MonoBehaviours
             NavMeshAgent = GetComponent<NavMeshAgent>();
             NavMeshAgent.updateRotation = false;
             NavMeshAgent.updateUpAxis = false;
-        }
+            Unselect();
+    }
 
         public void MoveUnit(Vector3 destination)
         {
@@ -29,13 +31,14 @@ namespace Assets.Units.MonoBehaviours
             selectedGameObject.SetActive(true);
         }
 
-        public void Unselect()
-        {
-            selectedGameObject.SetActive(false);
-        }
+      public void Unselect()
+      {
+          isSelected = false;
+          selectedGameObject.SetActive(isSelected);
+      }
 
 
-        public void SelectedAction(ControlEnum controlEnum, Func<Vector2> target)
+    public void SelectedAction(ControlEnum controlEnum, Func<Vector2> target)
         {
             switch (controlEnum)
             {
