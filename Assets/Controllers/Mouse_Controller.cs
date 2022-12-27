@@ -25,6 +25,24 @@ namespace Assets.Controllers
         private void Update()
         {
             Vector2 currFramePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                        
+            if (Input.GetMouseButtonDown(0))
+            {
+                //Left mouse button pressed
+                startPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                startPosition.z = 0;
+                selectionAreaTransform.gameObject.SetActive(true);
+
+                if (!Input.GetKey(KeyCode.LeftShift) && !Input.GetKey(KeyCode.LeftControl))
+                {
+                    foreach (var objectController in selectedUnitList)
+                    {
+                        objectController.Unselect();
+                    }
+                    //clear the selected unitlist before we update it
+                    selectedUnitList.Clear();
+                }
+            }
 
             if (Input.GetMouseButton(0))//if the left mouse button is held down, we are defining a box, lets draw it! using the selectionAreaTransform serialized field (gameObject)
             {
@@ -40,24 +58,6 @@ namespace Assets.Controllers
                 selectionAreaTransform.position = lowerleft;
                 selectionAreaTransform.localScale = upperRight - lowerleft;
 
-            }
-
-            if (Input.GetMouseButtonDown(0))
-            {
-                //Left mouse button pressed
-                selectionAreaTransform.gameObject.SetActive(true);
-                startPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                startPosition.z = 0;
-
-                if (!Input.GetKey(KeyCode.LeftShift) && !Input.GetKey(KeyCode.LeftControl))
-                {
-                    foreach (var objectController in selectedUnitList)
-                    {
-                        objectController.Unselect();
-                    }
-                    //clear the selected unitlist before we update it
-                    selectedUnitList.Clear();
-                }
             }
 
             if (Input.GetMouseButtonUp(0))
