@@ -68,5 +68,6 @@ namespace Assets.Buildings.MonoBehaviours
                     break;
             }
         }
+        public bool IsSelected() => isSelected;
     }
 }

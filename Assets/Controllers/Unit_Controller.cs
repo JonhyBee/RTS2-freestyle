@@ -48,5 +48,7 @@ namespace Assets.Controllers
                     break;
             }
         }
+
+        public bool IsSelected() => isSelected;
     }
 }

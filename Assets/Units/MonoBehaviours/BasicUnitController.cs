@@ -10,7 +10,7 @@ namespace Assets.Units.MonoBehaviours
     {
         private GameObject selectedGameObject;
         public bool isSelected;
-    public NavMeshAgent NavMeshAgent { get; private set; }
+        public NavMeshAgent NavMeshAgent { get; private set; }
 
         private void OnEnable()
         {
@@ -19,7 +19,7 @@ namespace Assets.Units.MonoBehaviours
             NavMeshAgent.updateRotation = false;
             NavMeshAgent.updateUpAxis = false;
             Unselect();
-    }
+        }
 
         public void MoveUnit(Vector3 destination)
         {
@@ -28,17 +28,18 @@ namespace Assets.Units.MonoBehaviours
 
         public void Select()
         {
+            isSelected = true;
             selectedGameObject.SetActive(true);
         }
 
-      public void Unselect()
-      {
-          isSelected = false;
-          selectedGameObject.SetActive(isSelected);
-      }
+        public void Unselect()
+        {
+            isSelected = false;
+            selectedGameObject.SetActive(isSelected);
+        }
 
 
-    public void SelectedAction(ControlEnum controlEnum, Func<Vector2> target)
+        public void SelectedAction(ControlEnum controlEnum, Func<Vector2> target)
         {
             switch (controlEnum)
             {
@@ -66,5 +67,6 @@ namespace Assets.Units.MonoBehaviours
             }
             this.transform.Rotate(Vector3.forward, 30);
         }
+        public bool IsSelected() => isSelected;
     }
 }

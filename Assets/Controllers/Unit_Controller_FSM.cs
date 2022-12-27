@@ -8,7 +8,7 @@ namespace Assets.Controllers
     public class Unit_Controller_FSM : MonoBehaviour, ISelectableObject
     {
         private GameObject selectedGameObject;
-        public bool is_selected;
+        public bool isSelected;
 
         public BaseUnitState CurrentState;
         public readonly MovingUnitState MovingUnitState = new MovingUnitState();
@@ -16,15 +16,15 @@ namespace Assets.Controllers
         [Range(0, 50)]
         public int MoveSpeed = 10;
 
-        private Rigidbody2D rigidbody;
-        public Rigidbody2D Rigidbody
+        private Rigidbody2D unityRigidbody2D;
+        public Rigidbody2D Rigidbody2D
         {
-            get { return rigidbody; }
+            get { return unityRigidbody2D; }
         }
 
         private void Awake()
         {
-            rigidbody = GetComponent<Rigidbody2D>();
+            unityRigidbody2D = GetComponent<Rigidbody2D>();
             CurrentState = IdleUnitState;
             selectedGameObject = transform.Find("Selected").gameObject;
             Unselect();
@@ -46,19 +46,20 @@ namespace Assets.Controllers
 
         public void Select()
         {
-            is_selected = true;
-            selectedGameObject.SetActive(is_selected);
+            isSelected = true;
+            selectedGameObject.SetActive(isSelected);
         }
 
         public void Unselect()
         {
-            is_selected = false;
-            selectedGameObject.SetActive(is_selected);
+            isSelected = false;
+            selectedGameObject.SetActive(isSelected);
         }
 
         public void SelectedAction(ControlEnum controlEnum, Func<Vector2> target)
         {   
             CurrentState.SelectedAction(this, controlEnum, target);
         }
+        public bool IsSelected() => isSelected;
     }
 }

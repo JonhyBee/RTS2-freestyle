@@ -12,5 +12,6 @@ namespace Assets.Interfaces
         void Select();
         void Unselect();
         void SelectedAction(ControlEnum controlEnum ,Func<Vector2> target);
+        bool IsSelected();
     }
 }

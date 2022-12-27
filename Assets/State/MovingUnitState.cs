@@ -19,16 +19,16 @@ namespace Assets.State
 
         public override void Update(Unit_Controller_FSM unit)
         {
-            var newPosition = Vector2.MoveTowards(unit.Rigidbody.position, destination(), unit.MoveSpeed * Time.deltaTime);
-            if (newPosition == unit.Rigidbody.position)
-                unit.TransitionToState(unit.IdleUnitState, () => unit.Rigidbody.position);
+            var newPosition = Vector2.MoveTowards(unit.Rigidbody2D.position, destination(), unit.MoveSpeed * Time.deltaTime);
+            if (newPosition == unit.Rigidbody2D.position)
+                unit.TransitionToState(unit.IdleUnitState, () => unit.Rigidbody2D.position);
             else
-                unit.Rigidbody.position = newPosition;
+                unit.Rigidbody2D.position = newPosition;
         }
 
         public override void OnCollisionEnter(Unit_Controller_FSM unit, Collision collision)
         {
-            unit.TransitionToState(unit.IdleUnitState, () => unit.Rigidbody.position);
+            unit.TransitionToState(unit.IdleUnitState, () => unit.Rigidbody2D.position);
         }
 
         public override void SelectedAction(Unit_Controller_FSM unit, ControlEnum controlEnum, Func<Vector2> target)

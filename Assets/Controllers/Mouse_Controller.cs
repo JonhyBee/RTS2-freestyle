@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using Assets.Interfaces;
+using Assets.Tools;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
 
 namespace Assets.Controllers
@@ -11,19 +13,19 @@ namespace Assets.Controllers
         Vector2 lastFramePosition;
         public Vector3 newTargetPosition;
         private Vector3 startPosition;
-        public List<ISelectableObject> selectedUnitList;
+        public HashSet<ISelectableObject> selectedUnitList;
 
         // Update is called once per frame
 
         private void Awake()
         {
-            selectedUnitList = new List<ISelectableObject>();
+            selectedUnitList = new HashSet<ISelectableObject>();
             selectionAreaTransform.gameObject.SetActive(false);
         }
         private void Update()
         {
             Vector2 currFramePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        
+
             if (Input.GetMouseButton(0))//if the left mouse button is held down, we are defining a box, lets draw it! using the selectionAreaTransform serialized field (gameObject)
             {
                 Vector3 currentMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -47,6 +49,15 @@ namespace Assets.Controllers
                 startPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 startPosition.z = 0;
 
+                if (!Input.GetKey(KeyCode.LeftShift) && !Input.GetKey(KeyCode.LeftControl))
+                {
+                    foreach (var objectController in selectedUnitList)
+                    {
+                        objectController.Unselect();
+                    }
+                    //clear the selected unitlist before we update it
+                    selectedUnitList.Clear();
+                }
             }
 
             if (Input.GetMouseButtonUp(0))
@@ -56,26 +67,41 @@ namespace Assets.Controllers
 
                 //detect all the colliders inside the selected box and created an array with them
                 Collider2D[] collider2DArray = Physics2D.OverlapAreaAll(startPosition, Camera.main.ScreenToWorldPoint(Input.mousePosition));
-
-
-                foreach (var objectController in selectedUnitList)
+                if(Input.GetKey(KeyCode.LeftControl))
                 {
-                    objectController.Unselect();
-                }
-                //clear the selected unitlist before we update it
-                selectedUnitList.Clear();
-
-                foreach (var collider2D in collider2DArray)
-                {
-                    //check if the selected unit is a peon
-                    var objectController = collider2D.GetComponent<ISelectableObject>();
-                    if (objectController != null)
+                    foreach (var collider2D in collider2DArray)
                     {
-                        objectController.Select();
-                        selectedUnitList.Add(objectController);
+                        //check if the selected unit is a peon
+                        var objectController = collider2D.GetComponent<ISelectableObject>();
+                        if (objectController != null)
+                        {
+                            if (objectController.IsSelected())
+                            {
+                                objectController.Unselect();
+                                selectedUnitList.Remove(objectController);
+                            }
+                            else
+                            {
+                                objectController.Select();
+                                selectedUnitList.Add(objectController);
+                            }                            
+                        }
                     }
-                    Debug.Log(selectedUnitList.Count);
                 }
+                else
+                {
+                    foreach (var collider2D in collider2DArray)
+                    {
+                        //check if the selected unit is a peon
+                        var objectController = collider2D.GetComponent<ISelectableObject>();
+                        if (objectController != null)
+                        {
+                            objectController.Select();
+                            selectedUnitList.Add(objectController);
+                        }
+                    }
+                }
+                Debug.Log(selectedUnitList.Count);
             }
 
             //Handle screen dragging
