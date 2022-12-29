@@ -25,7 +25,7 @@ namespace Assets.Controllers
         private void Update()
         {
             Vector2 currFramePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                        
+
             if (Input.GetMouseButtonDown(0))
             {
                 //Left mouse button pressed
@@ -67,7 +67,7 @@ namespace Assets.Controllers
 
                 //detect all the colliders inside the selected box and created an array with them
                 Collider2D[] collider2DArray = Physics2D.OverlapAreaAll(startPosition, Camera.main.ScreenToWorldPoint(Input.mousePosition));
-                if(Input.GetKey(KeyCode.LeftControl))
+                if (Input.GetKey(KeyCode.LeftControl))
                 {
                     foreach (var collider2D in collider2DArray)
                     {
@@ -84,7 +84,7 @@ namespace Assets.Controllers
                             {
                                 objectController.Select();
                                 selectedUnitList.Add(objectController);
-                            }                            
+                            }
                         }
                     }
                 }
@@ -113,11 +113,9 @@ namespace Assets.Controllers
 
             if (Input.GetMouseButtonUp(1))
             {
-                var hit = Physics2D.Raycast(currFramePosition, Vector2.zero);
-                if (hit.rigidbody != null)
-                    selectedUnitList.ForEach(x => x.SelectedAction(ControlEnum.MouseRightDown, () => hit.rigidbody.position));
-                else
-                    selectedUnitList.ForEach(x => x.SelectedAction(ControlEnum.MouseRightDown, () => currFramePosition));
+                var targetPositions = GetListTargetPosition(currFramePosition, 1, selectedUnitList.Count);
+                int positionInList = 0;
+                selectedUnitList.ForEach(x => x.SelectedAction(ControlEnum.MouseRightDown, () => targetPositions[positionInList++]));
             }
             if (Input.GetKeyDown(KeyCode.S))
             {
@@ -133,6 +131,17 @@ namespace Assets.Controllers
             }
 
             lastFramePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        }
+
+        private List<Vector2> GetListTargetPosition(Vector2 destination, float distance, int positionCount)
+        {
+            float side = Mathf.Ceil(Mathf.Sqrt(positionCount));
+            List<Vector2> targetPosition = new List<Vector2>();
+            for (float i = 0; i < positionCount; i++)
+            {
+                targetPosition.Add(new Vector2(destination.x + i % side - side / 2, destination.y + Mathf.FloorToInt(i / side) - side / 2));
+            }
+            return targetPosition;
         }
     }
 }
