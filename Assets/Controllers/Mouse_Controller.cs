@@ -26,6 +26,10 @@ namespace Assets.Controllers
         {
             Vector2 currFramePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
+            
+      
+      
+            
             if (Input.GetMouseButtonDown(0))
             {
                 //Left mouse button pressed
