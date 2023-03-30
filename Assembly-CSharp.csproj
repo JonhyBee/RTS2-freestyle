@@ -91,6 +91,7 @@
     <Compile Include="Assets\_\GameHandler_Setup.cs" />
     <Compile Include="Assets\Controllers\Pathfinding.cs" />
     <Compile Include="Assets\State\IdleUnitState.cs" />
+    <Compile Include="Assets\Controllers\CameraSizeController.cs" />
     <Compile Include="Assets\CodeMonkey\MonoBehaviours\ComponentActions.cs" />
     <Compile Include="Assets\ControlEnum.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\UI_Sprite.cs" />
@@ -102,7 +103,7 @@
     <Compile Include="Assets\Tools\Extensions.cs" />
     <Compile Include="Assets\CodeMonkey\CMDebug.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\FunctionPeriodic.cs" />
-    <Compile Include="Assets\Controllers\CameraSizeController.cs" />
+    <Compile Include="Assets\Resources\Tree Controller.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CodeMonkey\README.txt" />
@@ -693,6 +694,9 @@
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.quicksearch">
+      <HintPath>Library\ScriptAssemblies\com.unity.quicksearch.dll</HintPath>
+    </Reference>
     <Reference Include="PsdPlugin">
       <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
     </Reference>
@@ -773,9 +777,6 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.quicksearch">
-      <HintPath>Library\ScriptAssemblies\com.unity.quicksearch.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

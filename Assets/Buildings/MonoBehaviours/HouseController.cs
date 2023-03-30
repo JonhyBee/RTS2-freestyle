@@ -10,6 +10,8 @@ namespace Assets.Buildings.MonoBehaviours
     {
         public BasicUnitController PrefabUnit;
         public int PeonBuildTime;
+        public int MaxPeonPerHouse =3;
+        public int CurrentHousePeon;
         private bool isSelected;
         private GameObject selectedGameObject;
         private Func<Vector2> destination;
@@ -28,11 +30,16 @@ namespace Assets.Buildings.MonoBehaviours
         {
             while (true)
             {
+              if (CurrentHousePeon < MaxPeonPerHouse)
+              {
                 yield return new WaitForSeconds(PeonBuildTime);
                 var startingPosition = new Vector3(transform.position.x, transform.position.y - 1, transform.position.z);
-                var newPeon= Instantiate(PrefabUnit, startingPosition, Quaternion.identity);
+                var newPeon = Instantiate(PrefabUnit, startingPosition, Quaternion.identity);
                 var peonDestination = destination();
                 newPeon.NavMeshAgent.SetDestination(peonDestination);
+                CurrentHousePeon += 1;
+              }
+              else { break; }
             }
         }
 
@@ -61,7 +68,7 @@ namespace Assets.Buildings.MonoBehaviours
                 case ControlEnum.KeyDown_B:
                     StopAllCoroutines();
                     destination = target;
-                    StartCoroutine(BuildPeon());
+                    StartCoroutine(BuildPeon());                    
                     break;
                 default:
                     Debug.LogFormat("HouseController have no action registered for ${a}", controlEnum.ToString());
