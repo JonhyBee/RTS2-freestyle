@@ -49,7 +49,7 @@ namespace Assets.CodeMonkey.Utils {
 
         // Get Default Unity Font, used in text objects if no font given
         public static Font GetDefaultFont() {
-            return Resources.GetBuiltinResource<Font>("Arial.ttf");
+            return UnityEngine.Resources.GetBuiltinResource<Font>("Arial.ttf");
         }
 
 

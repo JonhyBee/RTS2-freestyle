@@ -4,14 +4,15 @@ using Assets.Interfaces;
 using Assets.Units.MonoBehaviours;
 using UnityEngine;
 
-namespace Assets.Buildings.MonoBehaviours
+namespace Assets.Resources.MonoBehaviours
 {
     public class HouseController : MonoBehaviour, ISelectableObject
     {
         public BasicUnitController PrefabUnit;
         public int PeonBuildTime;
-        public int MaxPeonPerHouse =3;
+        public int MaxPeonPerHouse = 3;
         public int CurrentHousePeon;
+        public int CurrentHealth = 100;
         private bool isSelected;
         private GameObject selectedGameObject;
         private Func<Vector2> destination;

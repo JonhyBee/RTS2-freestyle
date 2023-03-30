@@ -26,7 +26,7 @@ namespace Assets.CodeMonkey {
         // Instance reference
         public static Assets i {
             get {
-                if (_i == null) _i = Instantiate(Resources.Load<Assets>("CodeMonkeyAssets")); 
+                if (_i == null) _i = Instantiate(UnityEngine.Resources.Load<Assets>("CodeMonkeyAssets")); 
                 return _i; 
             }
         }
