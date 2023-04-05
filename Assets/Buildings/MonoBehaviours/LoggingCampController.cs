@@ -7,10 +7,10 @@ using UnityEngine;
 
 public class LoggingCampController : MonoBehaviour, ISelectableObject
 {
-  public float radius; // Radius of the circular area around the building
+  public int radius; // Radius of the circular area around the building
   private bool isSelected;
   private GameObject selectedGameObject;
-  public Color circleColor = new Color(0.0f, 1.0f, 0.0f, 0.3f); // Light green transparent circle color
+  public Color circleColor = new Color(0f, 1f, 0f, 0.5f); // Light green transparent circle color
   private GameObject circleObject; // Reference to the GameObject representing the circle
   private void Awake()
   {
@@ -78,10 +78,25 @@ public class LoggingCampController : MonoBehaviour, ISelectableObject
     SpriteRenderer circleRenderer = circleObject.GetComponent<SpriteRenderer>();
     circleRenderer.color = circleColor;
     circleRenderer.sprite = Sprite.Create(
-        texture: new Texture2D(1, 1),
+        texture: CreateTransparentTexture(2 * radius, 2 * radius),
         rect: new Rect(0, 0, 2 * radius, 2 * radius),
         pivot: new Vector2(0.5f, 0.5f)
     );
+    Debug.Log("THIS IS WORKING");
+    circleRenderer.sortingOrder = 10;
+  }
+
+  private Texture2D CreateTransparentTexture(int width, int height)
+  {
+    Texture2D texture = new Texture2D(width, height, TextureFormat.RGBA32, false);
+    Color[] pixels = new Color[width * height];
+    for (int i = 0; i < pixels.Length; i++)
+    {
+      pixels[i] = new Color(0f, 1f, 0f, 0.5f);
+    }
+    texture.SetPixels(pixels);
+    texture.Apply();
+    return texture;
   }
 }
 
