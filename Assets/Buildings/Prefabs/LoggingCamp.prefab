@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6910955990367531158}
   - component: {fileID: 6910955990367531177}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Selected
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 6910955990868960425}
   - component: {fileID: 6910955990868960406}
   - component: {fileID: 6910955990868960407}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LoggingCamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0
+  circleColor: {r: 0, g: 1, b: 0, a: 0.5}
 --- !u!208 &6910955990868960406
 NavMeshObstacle:
   m_ObjectHideFlags: 0
